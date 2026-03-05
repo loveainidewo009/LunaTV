@@ -3429,21 +3429,7 @@ const SiteConfigComponent = ({ config, refreshConfig }: { config: AdminConfig | 
 
   // 获取感谢信息
   const getThanksInfo = (dataSource: string) => {
-    switch (dataSource) {
-      case 'cors-proxy-zwei':
-        return {
-          text: 'Thanks to @Zwei',
-          url: 'https://github.com/bestzwei',
-        };
-      case 'cmliussss-cdn-tencent':
-      case 'cmliussss-cdn-ali':
-        return {
-          text: 'Thanks to @CMLiussss',
-          url: 'https://github.com/cmliu',
-        };
-      default:
-        return null;
-    }
+    return null;
   };
 
   useEffect(() => {
