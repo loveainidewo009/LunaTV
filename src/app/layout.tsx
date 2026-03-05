@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
+import { Analytics } from '@vercel/analytics/next';
 import type { Metadata, Viewport } from 'next';
 import { Inter } from 'next/font/google';
 
@@ -124,6 +125,7 @@ export default async function RootLayout({
             <GlobalErrorIndicator />
           </SiteProvider>
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );
